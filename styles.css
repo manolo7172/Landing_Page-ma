@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     text-align: left;
     flex-wrap: wrap;     
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 10% auto 20%;
     width: 60%;   
    
@@ -58,18 +58,20 @@ body {
       display: flex;
       flex-direction: column;
       width: 500px;
+      margin-left: 4px;
       margin-bottom: 40px;
-  
+
   }
   
   .timage{
-   flex: 1 1 0;
+    
+  flex-shrink: 0;
     height: 250px;
     width: 500px; 
-  
+flex: 1;
   } 
   img {
-    width: 100%;   
+    width: 95%;   
     border: rgb(87, 89, 119) solid;
     border-radius: 16px;
     height: 100%;
@@ -78,15 +80,16 @@ body {
   .info_pic{
     display: flex;
     flex-direction: column;
-   
-     margin: -15% 0 15% 0; 
-    background: rgba(177, 177, 177, 0.555);
+    height: 500px;
+    margin: -15% 0 15% 0; 
+    background: rgba(139, 139, 139, 0.555);
   }
   .infoTitle{
+    font-family: cursive;
     align-self: center;
     font-size: 36px;
     font-weight: bolder;
-    color: #1F2937;
+    color: hsl(0, 0%, 100%);
     margin: 1% 0%;
   }
 
@@ -99,7 +102,6 @@ body {
     align-items: flex-end;
     gap: 8%;
     flex-wrap: wrap; 
-  
   }
 
   .first,
@@ -108,20 +110,21 @@ body {
   .fourth{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: center;
     width: 300px;
-    height: 300px;
+    height: 400px;
     color: white;
     font-size: 24px;
     font-style: italic;
     font-weight: bold;
-
+  
   }
 
 
   .imgst img{
     width: 100%;
-    height: 65%;   
+    height: 40%; 
     border-radius: 6px;
     border: white solid 4px;
   }
@@ -199,8 +202,13 @@ body {
   }
   .hlogo{
     padding-left: 10%;
-    color: #f9faf8;
-    font-size: 24px;
+    width: 60px;
+    height: 45px; 
+  
+  }
+
+  .hlogo img{
+    border-radius: 50%;
   }
   .right-stuff{
     padding-right: 10%;
